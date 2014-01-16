@@ -3,7 +3,7 @@
 #Jan 15 2014
 
 projname := $(notdir $(CURDIR))
-libname := $(projname).a
+libname := lib$(projname).a
 objs := objs/
 deps := deps/
 src := src/
