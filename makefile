@@ -14,7 +14,7 @@ dependencies := $(addprefix $(deps),$(notdir $(subst .cpp,.d,$(sources))))
 include_dir := ./include
 
 CXXFLAGS += 
-CPPFLAGS += -I$(include_dir) -g 
+CPPFLAGS += -I$(include_dir) -g -fPIC
 LINKFLAGS :=  
 LINKFLAGS4TEST := -L./$(bins) -l$(libstem) -Wl,-rpath,. 
 MAKECMDGOAL := 
